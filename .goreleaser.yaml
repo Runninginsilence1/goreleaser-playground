@@ -19,6 +19,7 @@ builds:
   # Root main.go
   - env:
       - CGO_ENABLED=0
+    id: root
     goos:
       - linux
       - windows
@@ -30,6 +31,7 @@ builds:
   # cmd/app1
   - env:
       - CGO_ENABLED=0
+    id: app1
     goos:
       - linux
       - windows
@@ -42,6 +44,7 @@ builds:
   # cmd/app2
   - env:
       - CGO_ENABLED=0
+    id: app2
     goos:
       - linux
       - windows
@@ -54,6 +57,7 @@ builds:
   # cmd/app3
   - env:
       - CGO_ENABLED=0
+    id: app3
     goos:
       - linux
       - windows
